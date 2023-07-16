@@ -3,4 +3,6 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - run: node --version
+      - uses: actions - checkout@v3
+      - run: node eslint index.js --fix
+      - run: node index.js
